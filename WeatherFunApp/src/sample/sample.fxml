@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" styleClass="bodybg" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <Label text="Düsseldorf,GE" textFill="WHITE">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER" prefHeight="6.0" prefWidth="570.0">
+               <children>
+                  <ImageView fx:id="img" fitHeight="90.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/b.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="temperature" prefHeight="70.0" prefWidth="70.0" text="44°" textFill="WHITE">
+                     <font>
+                        <Font size="48.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="71.0" prefWidth="19.0" text="C" textFill="WHITE">
+                     <font>
+                        <Font size="48.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <Label fx:id="windToday" text="Clear" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="feel" textFill="WHITE" />
+                  <Pane prefHeight="31.0" prefWidth="40.0" />
+                  <Label fx:id="windSpeed" text="Wind 0mpbh" textFill="WHITE" />
+                  <Pane prefHeight="31.0" prefWidth="40.0" />
+                  <Label fx:id="visibility" text="LaVisibility 99mmbel" textFill="WHITE" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="barometer" text="FEels Like 22°" textFill="WHITE" />
+                  <Pane prefHeight="31.0" prefWidth="40.0" />
+                  <Label fx:id="humidity" text="Wind 0mpbh" textFill="WHITE" />
+                  <Pane prefHeight="31.0" prefWidth="40.0" />
+                  <Label fx:id="prcp" text="LaVisibility 99mmbel" textFill="WHITE" />
+               </children>
+            </HBox>
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </VBox>
+      <VBox alignment="BOTTOM_LEFT" prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <Label alignment="CENTER" text="Weekly" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="40.0" />
+               </VBox.margin>
+            </Label>
+            <HBox alignment="BASELINE_CENTER" prefHeight="124.0" prefWidth="600.0">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Label prefHeight="25.0" prefWidth="122.0" text="Today" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="3.0" />
+                           </VBox.margin>
+                        </Label>
+                        <ImageView fx:id="imgtoday" fitHeight="63.0" fitWidth="104.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/rechner.jpg" />
+                           </image>
+                           <VBox.margin>
+                              <Insets left="3.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <Label fx:id="max_mintemp" prefHeight="25.0" prefWidth="119.0" text="55° 31" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="3.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="desc" prefHeight="17.0" prefWidth="126.0" text="" textFill="WHITE">
+                           <VBox.margin>
+                              <Insets left="3.0" />
+                           </VBox.margin></Label>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Label fx:id="day2" prefHeight="25.0" prefWidth="128.0" text="Mon 8" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="3.0" />
+                           </VBox.margin>
+                        </Label>
+                        <ImageView fx:id="img_day2" fitHeight="63.0" fitWidth="104.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/rechner.jpg" />
+                           </image>
+                           <VBox.margin>
+                              <Insets left="3.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <Label fx:id="temperature_day2" prefHeight="25.0" prefWidth="101.0" text="55° 31" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="15.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="desc_day2" prefHeight="17.0" prefWidth="115.0" textFill="WHITE">
+                           <VBox.margin>
+                              <Insets left="3.0" />
+                           </VBox.margin></Label>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Label fx:id="day3" prefHeight="25.0" prefWidth="118.0" text="Mon 8" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="3.0" />
+                           </VBox.margin>
+                        </Label>
+                        <ImageView fx:id="img_day3" fitHeight="63.0" fitWidth="96.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/rechner.jpg" />
+                           </image>
+                           <VBox.margin>
+                              <Insets left="3.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <Label fx:id="temperature_day3" prefHeight="25.0" prefWidth="107.0" text="55° 31" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="15.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="desc_day3" prefHeight="17.0" prefWidth="111.0" text="Sunday" textFill="WHITE">
+                           <VBox.margin>
+                              <Insets left="3.0" />
+                           </VBox.margin></Label>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Label fx:id="day4" prefHeight="25.0" prefWidth="140.0" text="Mon 8" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="3.0" />
+                           </VBox.margin>
+                        </Label>
+                        <ImageView fx:id="img_day4" fitHeight="63.0" fitWidth="96.0" pickOnBounds="true" preserveRatio="true" style="-fx-background-color: Black;">
+                           <image>
+                              <Image url="@../images/rechner.jpg" />
+                           </image>
+                           <VBox.margin>
+                              <Insets left="3.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <Label fx:id="temperature_day4" prefHeight="25.0" prefWidth="125.0" text="55° 31" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="15.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="desc_day4" prefHeight="17.0" prefWidth="114.0" text="Sunday" textFill="WHITE">
+                           <VBox.margin>
+                              <Insets left="3.0" />
+                           </VBox.margin></Label>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Label fx:id="day5" prefHeight="25.0" prefWidth="165.0" text="Mon 8" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="3.0" />
+                           </VBox.margin>
+                        </Label>
+                        <ImageView fx:id="img_day5" fitHeight="63.0" fitWidth="96.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/rechner.jpg" />
+                           </image>
+                           <VBox.margin>
+                              <Insets left="3.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <Label fx:id="temperature_day5" prefHeight="25.0" prefWidth="111.0" text="55° 31" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="15.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="desc_day5" prefHeight="17.0" prefWidth="131.0" text="Sunday" textFill="WHITE">
+                           <VBox.margin>
+                              <Insets left="3.0" />
+                           </VBox.margin></Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </VBox.margin>
+      </VBox>
+   </children>
+</VBox>
